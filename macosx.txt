@@ -1,0 +1,30 @@
+[
+	{ "keys": ["f12"], "command": "htmlprettify"},
+	{ "keys": ["f1"], "command": "fold" },
+	{ "keys": ["f2"], "command": "unfold" },
+	{ "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
+	{ "keys": ["ctrl+space"], "command": "auto_complete" },
+	{ "keys": ["ctrl+space"], "command": "replace_completion_with_auto_complete", "context":
+	[
+	{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+	{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+	{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+	]
+	},
+	{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["super+shift+f"], "command": "reindent" , "args": {"single_line": false}},
+	{ "keys": ["option+up"], "command": "swap_line_up" },
+	{ "keys": ["option+down"], "command": "swap_line_down" },
+	{ "keys": ["super+option+j"], "command": "join_lines" },
+	{ "keys": ["super+option+up"], "command": "duplicate_line" },
+	{ "keys": ["super+option+down"], "command": "duplicate_line" },
+	{ "keys": ["shift+super+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["ctrl+super+s"], "command": "save_all" },
+	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	{ "keys": ["shift+super+f4"], "command": "close_all" },
+	{ "keys": ["shift+super+y"], "command": "lower_case" },
+	{ "keys": ["shift+super+x"], "command": "upper_case" }
+]
