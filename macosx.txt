@@ -22,7 +22,7 @@
 	{ "keys": ["super+option+up"], "command": "duplicate_line" },
 	{ "keys": ["super+option+down"], "command": "duplicate_line" },
 	{ "keys": ["shift+super+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-	{ "keys": ["ctrl+super+s"], "command": "save_all" },
+	{ "keys": ["shift+super+s"], "command": "save_all" },
 	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	{ "keys": ["shift+super+f4"], "command": "close_all" },
 	{ "keys": ["shift+super+y"], "command": "lower_case" },
